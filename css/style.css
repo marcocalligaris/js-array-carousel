@@ -1,0 +1,41 @@
+#carousel {
+    height: 500px;
+    width: 800px;
+    margin: 100px auto;
+    position: relative;
+}
+
+.gallery {
+    height: 100%;
+}
+
+.gallery img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    display: none;
+}
+
+.gallery .active {
+    display: block;
+}
+
+#carousel .bi {
+    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#prev {
+    right: calc(100% + 50px);
+}
+
+#next {
+    left: calc(100% + 50px);
+}
+
+
+
