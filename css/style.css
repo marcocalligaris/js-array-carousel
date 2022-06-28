@@ -5,19 +5,18 @@
     position: relative;
 }
 
-.gallery {
+#gallery {
     height: 100%;
 }
 
-.gallery img {
+#gallery img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     border-radius: 20px;
-    display: none;
 }
 
-.gallery .active {
+.active {
     display: block;
 }
 
