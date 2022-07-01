@@ -8,7 +8,7 @@ const gallery = document.querySelector('#carousel .gallery');
 const prevButton = document.getElementById('prev');
 const nextButton = document.getElementById('next');
 
-// // * Aggiunta della gallery di immagini
+// * Aggiunta della gallery di immagini
 // let image = '';
 // for (let i = 0; i < sources.length; i++) {
 //     image += `<img src="${sources[i]}" alt="landscape" />`;
@@ -22,7 +22,6 @@ let activeIndex = 0;
 
 // * Classe active per la prima immagine
 images[activeIndex].classList.add('active');
-
 
 
 // * Next button
@@ -40,10 +39,10 @@ nextButton.addEventListener('click', function(){
 prevButton.addEventListener('click', function() {
     images[activeIndex].classList.remove('active');
     activeIndex--;
-    images[activeIndex].classList.add('active');
     if(activeIndex < 0) {
         activeIndex = sources.length - 1;
     }
+    images[activeIndex].classList.add('active');
 })
 
 
