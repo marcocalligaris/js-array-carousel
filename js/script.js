@@ -1,20 +1,20 @@
 // * Preparo l'array con le immagini
 const sources = ["img/01.jpg", "img/02.jpg", "img/03.jpg", "img/04.jpg", "img/05.jpg"];
 
-
-// * Mi prendo dal DOM gli elementi che mi servono
-const images = document.querySelectorAll('#carousel img');
+//* Prendo dal DOM gli elementi
 const gallery = document.querySelector('#carousel .gallery');
 const prevButton = document.getElementById('prev');
 const nextButton = document.getElementById('next');
 
-// * Aggiunta della gallery di immagini
-// let image = '';
-// for (let i = 0; i < sources.length; i++) {
-//     image += `<img src="${sources[i]}" alt="landscape" />`;
-// }
 
-// gallery.innerHTML = image;
+// * Aggiunta della gallery di immagini
+let imageElements = '';
+for (let i = 0; i < sources.length; i++) {
+    imageElements += `<img src="${sources[i]}" alt="landscape" />`;
+}
+gallery.innerHTML = imageElements;
+
+const images = document.querySelectorAll('#carousel img');
 
 // * Creo variabile per l'immagine attiva
 let activeIndex = 0;
